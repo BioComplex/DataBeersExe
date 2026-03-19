@@ -649,3 +649,19 @@ h1, h2, h3 { font-family: var(--font-serif); line-height: 1.25; }
 @media (max-width: 480px) {
   .header-title { display: none; }
 }
+
+/* ── Event photo gallery ── */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.event-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+}

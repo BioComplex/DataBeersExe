@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataBeers Exeter #2 | March 2026</title>
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../../index.html" class="header-brand">
+        <img src="../../Images/Logo.png" alt="DataBeers Exeter logo" class="header-logo" />
+        <span class="header-title">DataBeers <em>Exeter</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="../../index.html"        class="nav-link">Home</a></li>
+          <li><a href="../../about.html"        class="nav-link">About Us</a></li>
+          <li><a href="../../organisers.html"   class="nav-link">Organisers</a></li>
+          <li><a href="../../past-events.html"  class="nav-link">Past Events</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-hero">
+      <h1>DataBeers Exeter <span class="accent">#2</span></h1>
+      <p>March 2026 &middot; Positive Lights Project, Exeter</p>
+    </div>
+
+    <!-- Speakers -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">The <span class="accent">Speakers</span></h2>
+        <p class="section-intro">
+          Five speakers shared their work in PechaKucha format: 20 slides, 20 seconds each.
+        </p>
+
+        <div class="organisers-grid">
+
+          <!-- Speaker card template — duplicate and fill in as needed -->
+          <div class="organiser-card">
+            <h3>Speaker Name</h3>
+            <p class="organiser-role">Talk Title</p>
+            <p class="organiser-affil">Affiliation</p>
+            <p>Short description of the talk.</p>
+          </div>
+
+          <div class="organiser-card">
+            <h3>Speaker Name</h3>
+            <p class="organiser-role">Talk Title</p>
+            <p class="organiser-affil">Affiliation</p>
+            <p>Short description of the talk.</p>
+          </div>
+
+          <div class="organiser-card">
+            <h3>Speaker Name</h3>
+            <p class="organiser-role">Talk Title</p>
+            <p class="organiser-affil">Affiliation</p>
+            <p>Short description of the talk.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Photos -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Event <span class="accent">Photos</span></h2>
+        <p class="section-intro">A look back at the evening.</p>
+
+        <div class="photo-grid">
+          <!-- Add <img> tags here as photos become available -->
+          <!-- Example:
+          <img src="photo1.jpg" alt="DataBeers Exeter #2" class="event-photo" />
+          -->
+          <p style="color:var(--mid-grey);font-style:italic;">Photos coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back link -->
+    <section class="section" style="text-align:center;">
+      <div class="container">
+        <a href="../../past-events.html" class="btn btn-outline">&larr; Back to Past Events</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/112291143/" target="_blank" rel="noopener" aria-label="DataBeers Exeter on LinkedIn">
+          <img src="../../Icons/linkedin-brands-solid-full.svg" alt="LinkedIn" class="footer-icon" />
+        </a>
+        <a href="#" aria-label="Email DataBeers Exeter" onclick="this.href='mailto:'+['databeers','biocomplexlab.org'].join('@')+'?subject=DataBeers%20Exe%3A%20General%20Inquiry'; return true;">
+          <img src="../../Icons/envelope-solid.png" alt="Email" class="footer-icon" />
+        </a>
+      </div>
+      <p>&copy; <span id="year"></span> DataBeers Exeter. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
