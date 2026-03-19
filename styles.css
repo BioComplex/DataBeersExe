@@ -650,6 +650,15 @@ h1, h2, h3 { font-family: var(--font-serif); line-height: 1.25; }
   .header-title { display: none; }
 }
 
+/* ── Speaker photo placeholder ── */
+.speaker-photo-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--light-grey);
+  margin: 0 auto 1rem;
+}
+
 /* ── Event photo gallery ── */
 .photo-grid {
   display: grid;
