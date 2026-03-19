@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Past Events | DataBeers Exeter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-brand">
+        <img src="Images/Logo.png" alt="DataBeers Exeter logo" class="header-logo" />
+        <span class="header-title">DataBeers <em>Exeter</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="index.html"        class="nav-link">Home</a></li>
+          <li><a href="about.html"        class="nav-link">About Us</a></li>
+          <li><a href="organisers.html"   class="nav-link">Organisers</a></li>
+          <li><a href="past-events.html"  class="nav-link">Past Events</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-hero">
+      <h1>Past <span class="accent">Events</span></h1>
+      <p>A look back at every DataBeers Exeter gathering</p>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-intro">
+          Each DataBeers Exeter event is shaped by whoever turns up and whoever steps
+          up to speak. Browse what we've covered so far.
+        </p>
+
+        <div class="events-list">
+
+          <article class="event-card">
+            <div class="event-date">
+              <span class="event-month">Jun</span>
+              <span class="event-year">2025</span>
+            </div>
+            <div class="event-details">
+              <h3>DataBeers Exeter #2</h3>
+              <p class="event-venue">The Rusty Bike, Exeter</p>
+              <p>
+                Our second edition. Talks covered data visualisation best practices,
+                the ethics of algorithmic decision-making, and a live coding demo
+                using Python and DuckDB to analyse local transport data.
+              </p>
+              <div class="event-tags">
+                <span class="tag">Visualisation</span>
+                <span class="tag">AI Ethics</span>
+                <span class="tag">Python</span>
+                <span class="tag">DuckDB</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-date">
+              <span class="event-month">Mar</span>
+              <span class="event-year">2025</span>
+            </div>
+            <div class="event-details">
+              <h3>DataBeers Exeter #1</h3>
+              <p class="event-venue">The Exeter Arms, Exeter</p>
+              <p>
+                Our inaugural event! Three fantastic talks covering machine learning
+                in local government, open data in Devon, and sports analytics from
+                a club in the lower leagues. Packed room, great energy.
+              </p>
+              <div class="event-tags">
+                <span class="tag">ML</span>
+                <span class="tag">Open Data</span>
+                <span class="tag">Sports Analytics</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-alt" style="text-align:center;">
+      <div class="container">
+        <h2 class="section-title">Speak at the <span class="accent">next one</span></h2>
+        <p class="section-intro" style="margin-inline:auto;">
+          Inspired by what you've seen? We're always looking for speakers.
+          Talks are PechaKucha style: 20 slides, 20 seconds each, on anything data-related.
+        </p>
+        <a href="#" class="btn btn-primary" onclick="this.href='mailto:'+['databeers','biocomplexlab.org'].join('@')+'?subject=DataBeers%20Exe%3A%20Interested%20in%20Speaking'; return true;">Propose a talk</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/112291143/" target="_blank" rel="noopener" aria-label="DataBeers Exeter on LinkedIn">
+          <img src="Icons/linkedin-brands-solid-full.svg" alt="LinkedIn" class="footer-icon" />
+        </a>
+        <a href="#" aria-label="Email DataBeers Exeter" onclick="this.href='mailto:'+['databeers','biocomplexlab.org'].join('@')+'?subject=DataBeers%20Exe%3A%20General%20Inquiry'; return true;">
+          <img src="Icons/envelope-solid.png" alt="Email" class="footer-icon" />
+        </a>
+      </div>
+      <p>&copy; <span id="year"></span> DataBeers Exeter. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

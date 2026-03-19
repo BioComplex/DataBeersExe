@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataBeers Exeter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-brand">
+        <img src="Images/Logo.png" alt="DataBeers Exeter logo" class="header-logo" />
+        <span class="header-title">DataBeers <em>Exeter</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="index.html"        class="nav-link">Home</a></li>
+          <li><a href="about.html"        class="nav-link">About Us</a></li>
+          <li><a href="organisers.html"   class="nav-link">Organisers</a></li>
+          <li><a href="past-events.html"  class="nav-link">Past Events</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <img src="Images/Logo.png" alt="DataBeers Exeter" class="hero-logo" />
+        <div class="hero-text">
+          <h1>DataBeers <span class="accent">Exeter</span></h1>
+          <p class="tagline">Where data meets community, over a pint.</p>
+          <p class="hero-desc">
+            An informal, PechaKucha-style meetup bringing together data scientists,
+            analysts, engineers and curious minds from across Devon and beyond.
+            Grab a beer, share your work, and connect with the local data community.
+          </p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="about.html" class="btn btn-primary">Find out more</a>
+            <a href="past-events.html" class="btn btn-outline">Past events</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--cream)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Quick highlights -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">What to <span class="accent">expect</span></h2>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="card-icon"><img src="Icons/beer-mug-empty-solid.png" alt="" class="icon-amber" /></div>
+            <h3>Informal atmosphere</h3>
+            <p>No suits, no slides required. Just people passionate about data gathering in a welcoming pub setting.</p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon"><img src="Icons/microphone-solid.png" alt="" class="icon-amber" /></div>
+            <h3>PechaKucha talks</h3>
+            <p>Short, punchy PechaKucha-style talks on anything data-related. 20 slides, 20 seconds each. Projects, tools, experiments, failures.</p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon"><img src="Icons/map-pin-solid.png" alt="" class="icon-amber" /></div>
+            <h3>Based in Exeter</h3>
+            <p>Rooted in Devon's county city, drawing speakers and attendees from across the South West.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA strips -->
+    <section class="section section-alt">
+      <div class="container cta-pair">
+
+        <div class="cta-block" style="text-align:center;">
+          <h2 class="section-title">Want to <span class="accent">Speak?</span></h2>
+          <p class="section-intro" style="margin-inline:auto;">
+            We are always looking for speakers. Beginners very welcome.
+            If you have done something interesting with data, we want to hear about it.
+          </p>
+          <a href="#" class="btn btn-primary" onclick="this.href='mailto:'+['databeers','biocomplexlab.org'].join('@')+'?subject=DataBeers%20Exe%3A%20Interested%20in%20Speaking'; return true;">Get in touch</a>
+        </div>
+
+        <div class="cta-divider"></div>
+
+        <div class="cta-block" style="text-align:center;">
+          <h2 class="section-title">Want to <span class="accent">Sponsor the Event?</span></h2>
+          <p class="section-intro" style="margin-inline:auto;">
+            DataBeers Exeter is free for all attendees and we rely on the generosity of sponsors
+            to keep it that way. If your organisation would like to support the community,
+            we would love to hear from you.
+          </p>
+          <a href="#" class="btn btn-outline" style="color:var(--red);border-color:var(--red);" onclick="this.href='mailto:'+['databeers','biocomplexlab.org'].join('@')+'?subject=DataBeers%20Exe%3A%20Interested%20in%20Sponsoring'; return true;">Become a sponsor</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/112291143/" target="_blank" rel="noopener" aria-label="DataBeers Exeter on LinkedIn">
+          <img src="Icons/linkedin-brands-solid-full.svg" alt="LinkedIn" class="footer-icon" />
+        </a>
+        <a href="#" aria-label="Email DataBeers Exeter" onclick="this.href='mailto:'+['databeers','biocomplexlab.org'].join('@')+'?subject=DataBeers%20Exe%3A%20General%20Inquiry'; return true;">
+          <img src="Icons/envelope-solid.png" alt="Email" class="footer-icon" />
+        </a>
+      </div>
+      <p>&copy; <span id="year"></span> DataBeers Exeter. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
